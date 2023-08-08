@@ -1,3 +1,4 @@
+"""시간이 많이 걸리니 여기서 하자"""
 # 체인법으로 해시 함수 구현하기
 # Do it! 실습 3-5 [A]
 from __future__ import annotations
@@ -82,3 +83,5 @@ class ChainedHash:
                 print(f'  → {p.key} ({p.value})', end='')  # 해시 테이블에 있는 키와 값을 출력
                 p = p.next
             print()
+
+
