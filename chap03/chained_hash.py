@@ -9,7 +9,7 @@ class Node:
     """해시를 구성하는 노드"""
 
     def __init__(self, key: Any, value: Any, next: Node) -> None:
-        """초기화"""
+        """객체에 초깃값을 설정해야 할 필요가 있을 때는 생성자를 활용"""
         self.key   = key    # 키
         self.value = value  # 값
         self.next  = next   # 뒤쪽 노드를 참조
@@ -33,7 +33,7 @@ class ChainedHash:
     def search(self, key: Any) -> Any:
         """키가 key인 원소를 검색하여 값을 반환"""
         hash = self.hash_value(key)  # 검색하는 키의 해시값
-        p = self.table[hash]         # 노드를 노드
+        p = self.table[hash]         # 노드를 주목
 
         while p is not None:
             if p.key == key:
